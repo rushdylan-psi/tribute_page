@@ -1,94 +1,204 @@
-html {font-size: 10px;}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
-    'Helvetica Neue', Arial, sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.5;
-  text-align: center;
-  color: #333;
-  margin: 0;
-}
-
-h1 {
-  font-size: 4rem;
-  margin-bottom: 0;
-}
-
-@media (max-width: 460px) {
-  h1 {
-    font-size: 3.5rem;
-    line-height: 1.2;
-  }
-}
-
-h2 {
-  font-size: 3.25rem;
-}
-
-a {
-  color: #477ca7;
-}
-
-a:visited {
-  color: #74638f;
-}
-
-#main {
-  margin: 30px 8px;
-  padding: 15px;
-  border-radius: 5px;
-  background: #eee;
-}
-
-@media (max-width: 460px) {
-  #main {
+* {
     margin: 0;
-  }
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-  height: auto;
-  margin: 0 auto;
+html {
+    font-family: sans-serif;
 }
 
-#img-div {
-  background: white;
-  padding: 10px;
-  margin: 0;
+h1{
+    font-size: 40px;
+}
+h3 {
+    font-size: 26px;
+}
+p {
+    font-size: 26px;
+    font-weight: 200;
+}
+.blue {
+    color: #21aef5;
+}
+.bold {
+    font-weight: 500;
+}
+.nav {
+    width: 100%;
+    height: 110px;
+}
+.navWrapper {
+    width: 80%;
+    margin: auto;
+}
+.navWrapper a {
+    float: left;
+    margin-top: 3em;
+    text-decoration: none;
 }
 
-#img-caption {
-  margin: 15px 0 5px 0;
+.right {
+    float: right;
+}
+.menu, .search {
+    display: flex;
+    align-items: center;
+}
+.menu img {
+    margin-right: 10px;
+    
+}
+.search img {
+    margin-left: 10px;
+}
+.menu p, .search p{
+    color: #65747e;
+    font-size: 26px;
+}
+.menu{
+    margin-left: 50px;
+}
+.search {
+    margin-left: 50px;
+}
+.navIcon {
+    margin-right: 30px;
+}
+.imageSection {
+    width: 100%;
+}
+.imageSectionWrapper {
+    width: 80%;
+    margin: auto;
+    display: block;
+    height: 800px;
+    background-image: url(images/Dylan-Rush.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.blogpostInfo {
+    position: absolute;
+    bottom: 0;
+
+}
+.info {
+    color: white;
+    background-color: #1c2329;
+    width: 680px;
+    text-align: center;
+    padding: 0.25em;
+    opacity: 0.97;
+    border-radius: 2px;
+    margin: 0 0 40px -30px;
+    padding: 0.25em 0.25em 0.25em 3em;
+}
+.info p{
+    margin: 15px 0;
+}
+.imageSectionWrapper h1 {
+    color: white;
+    background-color: #1c2329;
+    width: 680px;
+    text-align: center;
+    padding: 0.25em;
+    opacity: 0.97;
+    border-radius: 2px;
+    margin: 0 0 20px -60px;
 }
 
-@media (max-width: 460px) {
-  #img-caption {
-    font-size: 1.4rem;
-  }
+.content {
+    width: 80%;
+}
+.contentWrapper {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.mainContent {
+    flex: 3;
+}
+.sidebar {
+    flex: 0;
+    margin-top: 30px;
+    text-align: right;
+}
+.sidebar img {
+    width: 90px;
+}
+.mainContent {
+    margin-top: 30px;
+    text-align: right;
+}
+.mainContent p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #65747e;
+    line-height: 40px;
+}
+.mainContent h1 {
+    margin-top: 75px;
+    text-align: left;
+}
+.mainContent h3 {
+    margin-top: 75px;
+    text-align: left;
 }
 
-#headline {
-  margin: 50px 0;
-  text-align: center;
+.mainContent img {
+    width: 800px;
 }
 
-ul {
-  max-width: 550px;
-  margin: 0 auto 50px auto;
-  text-align: left;
-  line-height: 1.6;
+
+.relatedChild {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
 }
 
-li {
-  margin: 16px 0;
+.relatedChild h3 {
+    margin: 0;
+}
+.relatedChild p {
+    margin: 0 0 5px 0;
+    line-height: 30px;
+}
+.relatedChild a {
+    text-decoration: none;
 }
 
-blockquote {
-  font-style: italic;
-  max-width: 545px;
-  margin: 0 auto 50px auto;
-  text-align: left;
+.relatedLeft, .relatedRight {
+    flex: 1;
+}
+
+.related {
+    margin-bottom: 100px;
+}
+.relatedLeft img {
+    width: 185px;
+
+}
+
+.footer {
+    height: 110px;
+    width: 100%;
+    line-height: 110px;
+}
+.footerWrapper {
+    width: 80%;
+    margin: auto;
+}
+.footerWrapper p {
+    color: #65747e;
+    float: left;
+}
+.footerWrapper img {
+    margin: 15px;
+    vertical-align: middle;
 }
